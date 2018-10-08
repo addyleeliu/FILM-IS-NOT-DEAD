@@ -1,20 +1,73 @@
-body {
-  background-color: black;
-}
+/* Styling for first slide */
 
-h1, h2 {
-  color: white;
-  text-align: center;
-}
+    body {
+      background-color: black;
+    }
 
-h1 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 9vw;
-}
+    h1, h2 {
+      color: white;
+      text-align: center;
+    }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  font-size: 2vw;
-  letter-spacing: 0.15em;
-}
+    h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 9vw;
+    }
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter;
+      font-size: 2vw;
+      letter-spacing: 0.15em;
+    }
+
+
+/* Styling for slideshow */
+
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the slides by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* The dots */
+    .dot {
+      cursor: pointer;
+      width: 2.5vw;
+      height: 4.8vw;
+      margin-left: 2.2%;
+      margin-right: 2.2%;
+      background-color: white;
+      border-radius: 15%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: orange;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
