@@ -1,3 +1,26 @@
+/* Full bleed */
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; /* get rid of extra space on the right */
+    }
+
+/* Responsively positioning top and bottom dots and main content */
+
+    .flex-between {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+
+    .top {
+      margin-top: 0.15%;
+    }
+
 /* Styling for first slide */
 
     body {
@@ -21,6 +44,13 @@
       letter-spacing: 0.15em;
     }
 
+    .slide-container {
+      width: 100%;
+      height: 88vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
 /* Styling for slideshow */
 
@@ -29,7 +59,6 @@
     /* Slideshow container */
     .slideshow-container {
       position: relative;
-      margin: auto;
     }
 
     /* Hide the slides by default */
@@ -37,11 +66,18 @@
         display: none;
     }
 
-    /* The dots */
+    /* nav dots / film perforations */
+
+    .dot-container {
+      text-align:center;
+      margin-left: -10%;
+      margin-right: -10%;
+    }
+
     .dot {
       cursor: pointer;
       width: 2.5vw;
-      height: 4.8vw;
+      height: 3vw;
       margin-left: 2.2%;
       margin-right: 2.2%;
       background-color: white;
@@ -51,7 +87,7 @@
     }
 
     .active, .dot:hover {
-      background-color: orange;
+      background-color: #ffffbf;
     }
 
     /* Fading animation */
