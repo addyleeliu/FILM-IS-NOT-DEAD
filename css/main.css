@@ -95,24 +95,6 @@
       background-color: #940000;
     }
 
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-
-    @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-    }
-
 /* Styling for twine that film is hung on */
 
     .twine {
@@ -152,3 +134,76 @@
       left: 20vw;
       z-index: 1;
     }
+
+/* Styling for text on paper */
+
+    .header-txt, .body-txt {
+      text-align: center;
+    }
+
+    .header-txt {
+      font-family: 'Roboto Slab', serif;
+      font-size: 5vmin;
+    }
+
+    .body-txt {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2vmin;
+    }
+
+/* modified from http://justinaguilar.tumblr.com/
+
+    .slideLeft {
+    	animation-name: slideLeft;
+    	-webkit-animation-name: slideLeft;
+
+    	animation-duration: 1s;
+    	-webkit-animation-duration: 1s;
+
+    	animation-timing-function: ease-in-out;
+    	-webkit-animation-timing-function: ease-in-out;
+    }
+
+    @keyframes slideLeft {
+    	0% {
+    		transform: translateX(100%);
+    	}
+    	50% {
+    		transform: translateX(-1%);
+    	}
+    	65% {
+    		transform: translateX(0.5%);
+    	}
+    	80% {
+    		transform: translateX(-0.5%);
+    	}
+    	95% {
+    		transform: translateX(0.25%);
+    	}
+    	100% {
+    		transform: translateX(0%);
+    	}
+    }
+
+    @-webkit-keyframes slideLeft {
+    	0% {
+    		-webkit-transform: translateX(100%);
+    	}
+    	50% {
+    		-webkit-transform: translateX(-1%);
+    	}
+    	65% {
+    		-webkit-transform: translateX(0.5%);
+    	}
+    	80% {
+    		-webkit-transform: translateX(-0.5%);
+    	}
+    	95% {
+    		-webkit-transform: translateX(0.25%);
+    	}
+    	100% {
+    		-webkit-transform: translateX(0%);
+    	}
+    }
+
+*/
