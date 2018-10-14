@@ -133,77 +133,129 @@
       top: 12.5vh;
       left: 20vw;
       z-index: 1;
+      overflow: hidden;
     }
 
-/* Styling for text on paper */
+/* Styling for content on paper */
 
-    .header-txt, .body-txt {
+    .header-txt, .supplies {
       text-align: center;
     }
 
     .header-txt {
       font-family: 'Roboto Slab', serif;
       font-size: 5vmin;
+      font-weight: 700;
     }
 
     .body-txt {
       font-family: 'Roboto', sans-serif;
       font-size: 2vmin;
+      font-weight: lighter;
+      padding-left: 6%;
+      padding-right: 6%;
+      margin-top: -2%;
     }
 
-/* modified from http://justinaguilar.tumblr.com/
-
-    .slideLeft {
-    	animation-name: slideLeft;
-    	-webkit-animation-name: slideLeft;
-
-    	animation-duration: 1s;
-    	-webkit-animation-duration: 1s;
-
-    	animation-timing-function: ease-in-out;
-    	-webkit-animation-timing-function: ease-in-out;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: -2%;
     }
 
-    @keyframes slideLeft {
-    	0% {
-    		transform: translateX(100%);
-    	}
-    	50% {
-    		transform: translateX(-1%);
-    	}
-    	65% {
-    		transform: translateX(0.5%);
-    	}
-    	80% {
-    		transform: translateX(-0.5%);
-    	}
-    	95% {
-    		transform: translateX(0.25%);
-    	}
-    	100% {
-    		transform: translateX(0%);
-    	}
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    @-webkit-keyframes slideLeft {
-    	0% {
-    		-webkit-transform: translateX(100%);
-    	}
-    	50% {
-    		-webkit-transform: translateX(-1%);
-    	}
-    	65% {
-    		-webkit-transform: translateX(0.5%);
-    	}
-    	80% {
-    		-webkit-transform: translateX(-0.5%);
-    	}
-    	95% {
-    		-webkit-transform: translateX(0.25%);
-    	}
-    	100% {
-    		-webkit-transform: translateX(0%);
-    	}
+    #step1 {
+      margin-top: 5%;
+      width: 40%;
     }
 
-*/
+    #step2 {
+      margin-top: -2%;
+      height: 50%;
+    }
+
+    #step3 {
+      margin-top: 2.5%;
+      height: 50%;
+    }
+
+    #step4 {
+      margin-top: 2%;
+      height: 45%;
+    }
+
+    #step5 {
+      margin-top: 3.5%;
+      height: 50%;
+    }
+
+    #step6, #step7 {
+      margin-top: 3%;
+      height: 50%;
+    }
+
+    #step8 {
+      height: 50%;
+    }
+
+/* Positioning "film" sheets for the quiz */
+
+    #sheet1 .left-cp {
+      height: 7.5%;
+      width: auto;
+      position: absolute;
+      left: 30vw;
+      top: 2vh;
+      z-index: 2;
+    }
+
+    #sheet1 .right-cp {
+      height: 7.5%;
+      width: auto;
+      position: absolute;
+      left: 70vw;
+      top: 2vh;
+      z-index: 2;
+    }
+
+    #sheet1 .paper {
+      background-color: white;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 12.5vh;
+      left: 20vw;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Styling for paper */
+
+
+        /* Styling for twine that film is hung on */
+
+            .twine {
+              width: 100%;
+              height: 13vh;
+              margin-top: -65vh;
+              z-index: 0;
+            }
