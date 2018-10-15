@@ -4,6 +4,8 @@ $(function() {
 
   $( document ).tooltip({ track: true });
 
+  /* $('.paper').jCorner(); */
+
   //initialize the quiz options
   // adapted from https://codepen.io/cgspicer/pen/ahnHi
   $('.quiz-wrapper').find('li.option').each( function(i) {

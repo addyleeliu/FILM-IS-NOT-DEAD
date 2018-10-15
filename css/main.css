@@ -148,7 +148,7 @@
       font-weight: 700;
     }
 
-    .body-txt {
+    .body-txt, body .ui-tooltip {
       font-family: 'Roboto', sans-serif;
       font-size: 2vmin;
       font-weight: lighter;
@@ -201,6 +201,16 @@
 
     #step8 {
       height: 45%;
+    }
+
+/* Tooltip styling */
+
+    body .ui-tooltip {
+    	opacity: 1;
+      padding-left: 1%;
+      padding-right: 1%;
+      background-color: #940000;
+      color: white;
     }
 
 /* Positioning twine for the quiz */
@@ -272,7 +282,7 @@
 
     #sheet1 .paper, #sheet2 .paper, #sheet3 .paper, #sheet4 .paper,
     #sheet5 .paper, #sheet6 .paper, #sheet7 .paper, #sheet8 .paper {
-      background-color: #fcc7c7;
+      background-color: #ffbcbc;
     }
 
     /* Instructions sheet */
@@ -393,14 +403,12 @@ Adapted from https://codepen.io/cgspicer/pen/ahnHi */
       display: inline-block;
       width: 14.8vw;
       min-width: 70px;
-      height: 20vh;
+      height: 18vh;
       margin: 0 3px;
       text-align: center;
     }
 
-    ol {
-      list-style:none;
-    }
+
 
     .options {
       position: absolute;
