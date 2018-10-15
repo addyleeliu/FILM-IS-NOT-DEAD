@@ -262,12 +262,11 @@
       top: 49.7vh;
     }
 
-    #quiz-instructions .paper, #bank .paper {
+    #quiz-instructions .paper {
       background-color: #940000;
     }
 
-    #quiz-instructions > div > p, #bank > div > p,
-    .quiz-wrapper .body-txt {
+    #quiz-instructions > div > p {
       color: white;
     }
 
@@ -392,9 +391,9 @@ Adapted from https://codepen.io/cgspicer/pen/ahnHi */
 
     .quiz-wrapper .answers .target {
       display: inline-block;
-      width: 8vw;
-      height: 4vw;
-      background: #940000;
+      width: 14.8vw;
+      min-width: 70px;
+      height: 20vh;
       margin: 0 3px;
       text-align: center;
     }
@@ -405,8 +404,9 @@ Adapted from https://codepen.io/cgspicer/pen/ahnHi */
 
     .options {
       position: absolute;
-      left: 24.5vw;
+      left: 25%;
       top: 17vh;
+      z-index: 3;
     }
 
     #chem, #load, #wash, #dev, #stop, #fix, #rinse, #dry {
@@ -414,18 +414,18 @@ Adapted from https://codepen.io/cgspicer/pen/ahnHi */
       z-index: 3;
     }
 
-    #chem, #load, #wash { top: 19.5vh; }
+    #chem, #load, #wash { top: 17.8vh; }
 
-    #dev, #stop, #fix, #rinse, #dry { top: 61vh; }
+    #dev, #stop, #fix, #rinse, #dry { top: 59.5vh; }
 
-    #chem { left: 44.15vw; }
-    #load { left: 62.15vw; }
-    #wash { left: 80.15vw; }
-    #dev { left: 8.15vw; }
-    #stop { left: 26.15vw; }
-    #fix { left: 44.15vw; }
-    #rinse { left: 62.15vw; }
-    #dry { left: 80.15vw; }
+    #chem { left: 40.6vw; }
+    #load { left: 58.6vw; }
+    #wash { left: 76.6vw; }
+    #dev { left: 4.6vw; }
+    #stop { left: 22.6vw; }
+    #fix { left: 40.6vw; }
+    #rinse { left: 58.6vw; }
+    #dry { left: 76.65vw; }
 
 /* Styling hyperlinks */
 
