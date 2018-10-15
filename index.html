@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <title>FILM IS NOT DEAD.</title>
 
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto+Slab:400|Roboto:100|Roboto:400" rel="stylesheet">
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 
     <meta charset="UTF-8">
     <meta name="description" content="A Guide to Developing Your Own Film">
@@ -222,9 +223,44 @@
               <img src="img/clothespin.png" alt="clothespin" class="left-cp">
               <img src="img/clothespin.png" alt="clothespin" class="right-cp">
               <div class="paper">
-                <p class="header-txt">Test Yourself</p>
-                <p class="body-txt">Instructions</p>
-                <p class="body-txt">Check Your Answers button</p>
+                <p class="header-txt">Quiz</p>
+                <p class="body-txt">Test your knowledge by dragging the steps into the correct order.</p>
+              </div>
+            </div>
+
+            <div class="quiz-wrapper">
+
+              <ul class="options body-txt">
+                <li class="option" data-target="dry">Dry film.</li>
+                <li class="option" data-target="fix">Add fixer.</li>
+                <li class="option" data-target="load">Load film.</li>
+                <li class="option" data-target="rinse">Rinse.</li>
+                <li class="option" data-target="stop">Add stop bath.</li>
+                <li class="option" data-target="wash">Pre-wash film.</li>
+                <li class="option" data-target="chem">Assemble chemicals.</li>
+                <li class="option" data-target="dev">Add developer.</li>
+              </ul>
+
+              <div class="answers body-txt">
+                <ol>
+                  <li id="chem"><span class="target" data-accept="chem">&nbsp;</span></li>
+                  <li id="load"><span class="target" data-accept="load">&nbsp;</span></li>
+                  <li id="wash"><span class="target" data-accept="wash">&nbsp;</span></li>
+                  <li id="dev"><span class="target" data-accept="dev">&nbsp;</span></li>
+                  <li id="stop"><span class="target" data-accept="stop">&nbsp;</span></li>
+                  <li id="fix"><span class="target" data-accept="fix">&nbsp;</span></li>
+                  <li id="rinse"><span class="target" data-accept="rinse">&nbsp;</span></li>
+                  <li id="dry"><span class="target" data-accept="dry">&nbsp;</span></li>
+                </ol>
+              </div>
+
+            </div>
+
+            <div id="bank" class="quiz">
+              <img src="img/clothespin.png" alt="clothespin" class="left-cp">
+              <img src="img/clothespin.png" alt="clothespin" class="right-cp">
+              <div class="paper">
+                <p class="header-txt">Options</p>
               </div>
             </div>
 
@@ -350,6 +386,8 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
     <script src="js/scripts.js"></script>
   </body>
 

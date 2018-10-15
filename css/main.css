@@ -208,7 +208,6 @@
     #twine1 {
       width: 100%;
       height: 10vh;
-      margin-top: -30.5vh;
       z-index: 0;
     }
 
@@ -224,6 +223,7 @@
     /* General */
 
     #quiz-instructions .left-cp, #quiz-instructions .right-cp,
+    #bank .left-cp, #bank .right-cp,
     #sheet1 .left-cp, #sheet1 .right-cp,
     #sheet2 .left-cp, #sheet2 .right-cp,
     #sheet3 .left-cp, #sheet3 .right-cp {
@@ -232,6 +232,7 @@
     }
 
     #quiz-instructions .paper,
+    #bank .paper,
     #sheet1 .paper,
     #sheet2 .paper,
     #sheet3 .paper {
@@ -261,6 +262,20 @@
       top: 49.7vh;
     }
 
+    #quiz-instructions .paper, #bank .paper {
+      background-color: #940000;
+    }
+
+    #quiz-instructions > div > p, #bank > div > p,
+    .quiz-wrapper .body-txt {
+      color: white;
+    }
+
+    #sheet1 .paper, #sheet2 .paper, #sheet3 .paper, #sheet4 .paper,
+    #sheet5 .paper, #sheet6 .paper, #sheet7 .paper, #sheet8 .paper {
+      background-color: #fcc7c7;
+    }
+
     /* Instructions sheet */
 
     #quiz-instructions .left-cp { left: 6vw; }
@@ -268,6 +283,14 @@
     #quiz-instructions .right-cp { left: 18vw; }
 
     #quiz-instructions .paper { left: 4.85vw; }
+
+    /* Options sheet */
+
+    #bank .left-cp { left: 24vw; }
+
+    #bank .right-cp { left: 36vw; }
+
+    #bank .paper { left: 22.85vw; }
 
     /* Sheet 1 */
 
@@ -337,6 +360,72 @@
     .quiz .header-txt {
       font-size: 3.75vmin;
     }
+
+/* Quiz - Options and Answers
+Adapted from https://codepen.io/cgspicer/pen/ahnHi */
+
+    .quiz-wrapper {
+      height: 85vh;
+      margin-top: -28.5%;
+    }
+
+    .quiz-wrapper ul.options {
+      vertical-align: top;
+      width: 165px;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .quiz-wrapper ul.options li.option {
+      display: block;
+      position: relative;
+      z-index: 50;
+    }
+
+    .quiz-wrapper .answers {
+      display: inline-block;
+      width: 335px;
+      line-height: 20px;
+    }
+
+    .quiz-wrapper .answers .target {
+      display: inline-block;
+      width: 8vw;
+      height: 4vw;
+      background: #940000;
+      margin: 0 3px;
+      text-align: center;
+    }
+
+    ol {
+      list-style:none;
+    }
+
+    .options {
+      position: absolute;
+      left: 24.5vw;
+      top: 17vh;
+    }
+
+    #chem, #load, #wash, #dev, #stop, #fix, #rinse, #dry {
+      position: absolute;
+      z-index: 3;
+    }
+
+    #chem, #load, #wash { top: 19.5vh; }
+
+    #dev, #stop, #fix, #rinse, #dry { top: 61vh; }
+
+    #chem { left: 44.15vw; }
+    #load { left: 62.15vw; }
+    #wash { left: 80.15vw; }
+    #dev { left: 8.15vw; }
+    #stop { left: 26.15vw; }
+    #fix { left: 44.15vw; }
+    #rinse { left: 62.15vw; }
+    #dry { left: 80.15vw; }
 
 /* Styling hyperlinks */
 

@@ -2,6 +2,31 @@ $(function() {
 
   console.log('jQ loaded all systems go');
 
+  //initialize the quiz options
+  // adapted from https://codepen.io/cgspicer/pen/ahnHi
+  $('.quiz-wrapper').find('li.option').each( function(i) {
+    var $this = $(this);
+    var answerValue = $this.data('target');
+    var $target = $('.answers .target[data-accept="'+answerValue+'"]');
+    var labelText = $this.html();
+    $this.draggable( {
+      revert: "invalid",
+      containment: ".quiz-wrapper"
+    });
+
+    if ( $target.length > 0 ) {
+    $target.droppable( {
+        accept: 'li.option[data-target="'+answerValue+'"]',
+        drop: function( event, ui ) {
+          $this.draggable('destroy');
+          $target.droppable('destroy');
+          $this.html('&nbsp;');
+          $target.html(labelText);
+        }
+    });
+    } else { }
+   });
+
 });
 
 var slideIndex = 1;
