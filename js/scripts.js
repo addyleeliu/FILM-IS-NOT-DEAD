@@ -2,6 +2,8 @@ $(function() {
 
   console.log('jQ loaded all systems go');
 
+  $( document ).tooltip({ track: true });
+
   //initialize the quiz options
   // adapted from https://codepen.io/cgspicer/pen/ahnHi
   $('.quiz-wrapper').find('li.option').each( function(i) {
