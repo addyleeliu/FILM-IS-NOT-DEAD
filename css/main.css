@@ -51,7 +51,7 @@
     .slide-container {
       width: 100%;
       height: 85vh;
-      background-color: #940000;
+      background-color: black;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -99,8 +99,8 @@
 
     .twine {
       width: 100%;
-      height: 13vh;
-      margin-top: -65vh;
+      height: 15vh;
+      margin-top: -63vh;
       z-index: 0;
     }
 
@@ -111,7 +111,7 @@
       width: auto;
       position: absolute;
       left: 30vw;
-      top: 2vh;
+      top: 6vh;
       z-index: 2;
     }
 
@@ -120,7 +120,7 @@
       width: auto;
       position: absolute;
       left: 70vw;
-      top: 2vh;
+      top: 6vh;
       z-index: 2;
     }
 
@@ -130,7 +130,7 @@
       position: absolute;
       width: 60vw;
       height: 60vh;
-      top: 12.5vh;
+      top: 16.5vh;
       left: 20vw;
       z-index: 1;
       overflow: hidden;
@@ -191,71 +191,194 @@
 
     #step5 {
       margin-top: 3.5%;
-      height: 50%;
+      height: 45%;
     }
 
     #step6, #step7 {
       margin-top: 3%;
-      height: 50%;
+      height: 45%;
     }
 
     #step8 {
-      height: 50%;
+      height: 45%;
     }
 
-/* Positioning "film" sheets for the quiz */
+/* Positioning twine for the quiz */
 
-    #sheet1 .left-cp {
-      height: 7.5%;
-      width: auto;
-      position: absolute;
-      left: 30vw;
+    #twine1 {
+      width: 100%;
+      height: 10vh;
+      margin-top: -30.5vh;
+      z-index: 0;
+    }
+
+    #twine2 {
+      width: 100%;
+      height: 10vh;
+      margin-top: 32vh;
+      z-index: 0;
+    }
+
+/* Positioning sheets for the quiz */
+
+    /* General */
+
+    #quiz-instructions .left-cp, #quiz-instructions .right-cp,
+    #sheet1 .left-cp, #sheet1 .right-cp,
+    #sheet2 .left-cp, #sheet2 .right-cp,
+    #sheet3 .left-cp, #sheet3 .right-cp {
+      height: 9%;
       top: 2vh;
-      z-index: 2;
     }
 
-    #sheet1 .right-cp {
-      height: 7.5%;
-      width: auto;
-      position: absolute;
-      left: 70vw;
-      top: 2vh;
-      z-index: 2;
-    }
-
-    #sheet1 .paper {
-      background-color: white;
-      position: absolute;
-      width: 30vw;
+    #quiz-instructions .paper,
+    #sheet1 .paper,
+    #sheet2 .paper,
+    #sheet3 .paper {
+      width: 15vw;
+      min-width: 70px;
       height: 30vh;
-      top: 12.5vh;
-      left: 20vw;
-      z-index: 1;
-      overflow: hidden;
+      top: 7.7vh;
     }
 
+    #sheet4 .left-cp, #sheet4 .right-cp,
+    #sheet5 .left-cp, #sheet5 .right-cp,
+    #sheet6 .left-cp, #sheet6 .right-cp,
+    #sheet7 .left-cp, #sheet7 .right-cp,
+    #sheet8 .left-cp, #sheet8 .right-cp {
+      height: 9%;
+      top: 43.95vh;
+    }
 
+    #sheet4 .paper,
+    #sheet5 .paper,
+    #sheet6 .paper,
+    #sheet7 .paper,
+    #sheet8 .paper {
+      width: 15vw;
+      min-width: 70px;
+      height: 30vh;
+      top: 49.7vh;
+    }
 
+    /* Instructions sheet */
 
+    #quiz-instructions .left-cp { left: 6vw; }
 
+    #quiz-instructions .right-cp { left: 18vw; }
 
+    #quiz-instructions .paper { left: 4.85vw; }
 
+    /* Sheet 1 */
 
+    #sheet1 .left-cp { left: 42vw; }
 
+    #sheet1 .right-cp { left: 54vw; }
 
+    #sheet1 .paper { left: 40.85vw; }
 
+    /* Sheet 2 */
 
+    #sheet2 .left-cp { left: 60vw; }
 
+    #sheet2 .right-cp { left: 72vw; }
 
+    #sheet2 .paper { left: 58.85vw; }
 
-    /* Styling for paper */
+    /* Sheet 3 */
 
+    #sheet3 .left-cp { left: 78vw; }
 
-        /* Styling for twine that film is hung on */
+    #sheet3 .right-cp { left: 90vw; }
 
-            .twine {
-              width: 100%;
-              height: 13vh;
-              margin-top: -65vh;
-              z-index: 0;
-            }
+    #sheet3 .paper { left: 76.85vw; }
+
+    /* Sheet 4 */
+
+    #sheet4 .left-cp { left: 6vw; }
+
+    #sheet4 .right-cp { left: 18vw; }
+
+    #sheet4 .paper { left: 4.85vw; }
+
+    /* Sheet 5 */
+
+    #sheet5 .left-cp { left: 24vw; }
+
+    #sheet5 .right-cp { left: 36vw; }
+
+    #sheet5 .paper { left: 22.85vw; }
+
+    /* Sheet 6 */
+
+    #sheet6 .left-cp { left: 42vw; }
+
+    #sheet6 .right-cp { left: 54vw; }
+
+    #sheet6 .paper { left: 40.85vw; }
+
+    /* Sheet 7 */
+
+    #sheet7 .left-cp { left: 60vw; }
+
+    #sheet7 .right-cp { left: 72vw; }
+
+    #sheet7 .paper { left: 58.85vw; }
+
+    /* Sheet 8 */
+
+    #sheet8 .left-cp { left: 78vw; }
+
+    #sheet8 .right-cp { left: 90vw; }
+
+    #sheet8 .paper { left: 76.85vw; }
+
+/* Styling for content on paper in the quiz */
+    .quiz .header-txt {
+      font-size: 3.75vmin;
+    }
+
+/* Styling hyperlinks */
+
+    /* unvisited and visited link */
+    a:link, a:visited {
+        color: #CC0000;
+    }
+
+    /* mouse over link */
+    a:hover {
+        color: #f78888;
+    }
+
+/* Sources and Credits */
+
+    /* General */
+
+    #sources .paper,
+    #credits .paper {
+      width: 34vw;
+      min-width: 130px;
+      max-width: 430px;
+    }
+
+    #sources .body-txt, #credits .body-txt {
+      font-size: 2.8vmin;
+      font-weight: normal;
+      line-height: 3em;
+    }
+
+    /* Sources */
+
+    #sources .left-cp { left: 17.25vw; }
+
+    #sources .right-cp { left: 37.25vw; }
+
+    #sources .paper { left: 12.75vw; }
+
+    /* Credits */
+
+    #credits .left-cp { left: 61.25vw; }
+
+    #credits .right-cp { left: 81.25vw; }
+
+    #credits .paper { left: 56.75vw; }
